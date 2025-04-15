@@ -22,7 +22,8 @@ export default function Estoque() {
                 <Text>Em estoque: {countCadeira}</Text>
                 <View style={styles.buttons}>
                   <TouchableOpacity style={styles.btn} onPress={() => setCountCadeira(countCadeira+1)}>+</TouchableOpacity>
-                  <TouchableOpacity style={styles.btn} onPress={() => setCountCadeira(countCadeira-1)}>-</TouchableOpacity>
+                  <TouchableOpacity style={styles.btn} onPress={() => {if (countCadeira > 0) setCountCadeira(countCadeira - 1);
+                  }}>-</TouchableOpacity>
                 </View>
             </View>
         </View>
@@ -36,8 +37,8 @@ export default function Estoque() {
                 <Text>Em estoque: {countMesa}</Text>
                 <View style={styles.buttons}>
                   <TouchableOpacity style={styles.btn} onPress={() => setCountMesa(countMesa+1)}>+</TouchableOpacity>
-                  <TouchableOpacity style={styles.btn} onPress={() => setCountMesa(countMesa-1)}>-</TouchableOpacity>
-                </View>
+                  <TouchableOpacity style={styles.btn} onPress={() => { if (countMesa > 0) setCountMesa(countMesa - 1); }}>-</TouchableOpacity>
+                  </View>
             </View>
         </View>
 
@@ -50,8 +51,8 @@ export default function Estoque() {
                 <Text>Em estoque: {countPoltrona}</Text>
                 <View style={styles.buttons}>
                   <TouchableOpacity style={styles.btn} onPress={() => setCountPoltrona(countPoltrona+1)}>+</TouchableOpacity>
-                  <TouchableOpacity style={styles.btn} onPress={() => setCountPoltrona(countPoltrona-1)}>-</TouchableOpacity>
-                </View>
+                  <TouchableOpacity style={styles.btn} onPress={() => { if (countPoltrona > 0) setCountPoltrona(countPoltrona - 1); }}>-</TouchableOpacity>
+                  </View>
             </View>
         </View>
 
@@ -63,8 +64,8 @@ export default function Estoque() {
                 <Text>Em estoque: {countSofa}</Text>
                 <View style={styles.buttons}>
                   <TouchableOpacity style={styles.btn} onPress={() => setCountSofa(countSofa+1)}>+</TouchableOpacity>
-                  <TouchableOpacity style={styles.btn} onPress={() => setCountSofa(countSofa-1)}>-</TouchableOpacity>
-                </View>
+                  <TouchableOpacity style={styles.btn} onPress={() => { if (countSofa > 0) setCountSofa(countSofa - 1); }}>-</TouchableOpacity>
+                  </View>
             </View>
         </View>
 
@@ -76,8 +77,8 @@ export default function Estoque() {
                 <Text>Em estoque: {countTV}</Text>
                 <View style={styles.buttons}>
                   <TouchableOpacity style={styles.btn} onPress={() => setCountTV(countTV+1)}>+</TouchableOpacity>
-                  <TouchableOpacity style={styles.btn} onPress={() => setCountTV(countTV-1)}>-</TouchableOpacity>
-                </View>
+                  <TouchableOpacity style={styles.btn} onPress={() => { if (countTV > 0) setCountTV(countTV - 1); }}>-</TouchableOpacity>
+                  </View>
             </View>
         </View>
 
